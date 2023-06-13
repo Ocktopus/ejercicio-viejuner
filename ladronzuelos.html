@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ladronzuelos de bicicletas</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Datos Bicicleta:</legend>
+        <label for="dia">Día</label>
+        <input type="date" id="dia" name="dia" tabindex="1" required><br>
+        <label for="tiempo">Hora</label>   
+        <input type="time" id="tiempo"  name="tiempo" tabindex="2" required><br>
+        <label for="colorbici">Color de la Bici:</label>
+        <input type="color" id="colorbici" name="colorbici" tabindex="3" required><br>
+        <label for="precio">Rango de Precio:</label><br>
+        <label>0€</label>
+        <input type="range" id="precio" name="precio" min="0" max="2000" step="100" tabindex="4" required>
+        <label>2000€</label><br>
+        <label for="tipobici">Tipo de bicicleta:</label><br>
+        <label for="paseo">Paseo</label>
+        <input type="radio" name="tipobici" id="paseo" value="paseo" tabindex="5" required>
+        <label for="montana">Montaña</label>
+        <input type="radio" name="tipobici" id="montana" value="montana" tabindex="6" required>
+        <label for="carreras">Carreras</label>
+        <input type="radio" name="tipocici" id="carreras" value="carreras" tabindex="7" required><br><br>
+        <label for="accesorios">Accesorios: </label><br>
+        <select name="accesorios" id="accesorios" multiple tabindex="8" required>
+            <option value="ruedines">Ruedines</option>
+            <option value="pegatinas">Pegatinas</option>
+            <option value="cestita">Cestita</option>
+            <option value="bombaaire">Bomba de Aire</option>
+            <option value="timbre">Timbre</option>
+            <option value="foco">Foco</option>
+        </select><br><br>
+        <label for="marca">¿Qué Marca de bicicleta era?</label>
+        <select name="marca" id="marca" tabindex="9" required>
+            <option value="specialized">Specialized</option>
+            <option value="trek">Trek</option>
+            <option value="merida">Merida</option>
+            <option value="scott">Scott</option>
+            <option value="giant">Giant</option>
+            <option value="cube">Cube</option>
+            <option value="lapierre">Lapierre</option>
+            <option value="orbea">Orbea</option>
+            <option value="cannondale">Cannondale</option>
+            <option value="bmc">Bmc</option>
+            <option value="canyon">Canyon</option>
+            <option value="look">Look</option>
+            <option value="protek">Protek</option>
+            <option value="megamo">Megamo</option>
+            <option value="pinarello">Pinarello</option>
+            <option value="bianchi">Bianchi</option>
+            <option value="bh">BH</option>
+            <option value="factor">Factor</option>
+            <option value="ghost">Ghost</option>
+            <option value="cervelo">Cervélo</option>
+            <option value="argon">Argon</option>
+        </select>
+        <section class="enviar">
+            <input type="submit" value="Enviar">
+            <input type="reset">
+        </section>
+        </fieldset>
+    </form>
+</body>
+</html>

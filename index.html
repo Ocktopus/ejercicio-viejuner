@@ -8,15 +8,46 @@
 </head>
 <body>
 <section id='datosclub'>
-        <img src='https://github.com/TheBridge-FullStackDeveloper/html-pp-formularios/blob/master/abueletes.jpg' alt="El Club Viejuner" id="foto">
+    
         <hr>
-        <form>
-         <label for="nombre">Nombre</label><br>
-         <input type="text" id="nombre" name="nombre"><br>
-         <label for="apellidos">Apellidos</label>><br>
-         <input type="text" id="apellidos" name="apellidos"><br>
-         
-
+        <form action="viejuner.html" method="POST">
+            <fieldset>
+            <legend>Tú:</legend>
+            <ul>
+                <p>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" autofocus placeholder="Ingresa tu nombre" tabindex="1" required><br>            
+                <label for="apellidos">Apellidos:</label>
+                <input type="text" id="apellidos" name="apellidos" autofocus placeholder="Ingresa tus apellidos" tabindex="2" required><br>
+                <label for="edad">Edad</label>
+                <input type="number" id="edad" name="edad"autofocus placeholder="¿Cuántos años tienes?" tabindex="3" required><br>
+            </p>
+                <p>Sexo:
+                 <input type="radio" name="sexo" id="masculino" value="Masculino" tabindex="4"required>
+                 <label for="masculino">Masculino</label>
+                 <input type="radio" name="sexo" id="femenino" value="Femenino" tabindex="5" required>
+                 <label for="femenino">Femenino</label> 
+                </p>
+                <p>
+                <input type="checkbox" id="viejuner" name="viejuner" value="viejuner" tabindex="6" required>
+                <label for="viejuner">Me siento viejuner</label><br>
+                </p>
+                <section class="sobreti">
+                <label for="multi">Dinos algo sobre tí</label><br>
+                <textarea id="multi" name="multi" rows="4" cols="30" autofocus tabindex="7" required></textarea>
+                </section>
+                <label for="circustancias">Tus Circustancias:</label><br>
+                <label for="correo">Email:</label>
+                <input type="email" id="correo" name="correo" placeholder="Ingresa tu Email" tabindex="8" required><br>
+                <label for="movil">Teléfono Móvil</label>
+                <input type="tel" id="movil" name="movil" placeholder="Ingresa tu número" tabindex="9" required><br><br>
+                <section class="enviar">
+                    <input type="submit" value="Enviar">
+                    <input type="reset">
+                </section>
+                    
+            </ul>
+        </fieldset>
         </form>
 </section>  
     
